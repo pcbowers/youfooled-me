@@ -1,0 +1,113 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Simple Dark Mode */
+
+:root {
+  --background-color: #212a2e;
+  --text-color: #f7f8f8;
+  --link-color: #828fff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #212a2e;
+    --text-color: #f7f8f8;
+    --link-color: #828fff;
+  }
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  filter: brightness(80%);
+}
+
+/* Specific Styles */
+
+main {
+  max-width: 85ch;
+  margin: 0.5em auto;
+  padding: 0 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-top: 0.25em;
+}
+
+img {
+  object-fit: cover;
+  object-position: 50% 28%;
+  border-radius: 0.5em;
+  max-height: 250px;
+  width: 100%;
+}
