@@ -7,82 +7,93 @@
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="title" content="The Art of Deception" />
-    <meta
-      name="description"
-      content="Explore the complex world of deception and its impact on our lives" />
+    <meta name="description" content="Explore the complex world of deception and its impact on our lives" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://youfooled.me/" />
     <meta property="og:title" content="The Art of Deception" />
-    <meta
-      property="og:description"
-      content="Explore the complex world of deception and its impact on our lives" />
+    <meta property="og:description" content="Explore the complex world of deception and its impact on our lives" />
     <meta property="og:image" content="https://youfooled.me/image.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://youfooled.me/" />
     <meta property="twitter:title" content="The Art of Deception" />
-    <meta
-      property="twitter:description"
-      content="Explore the complex world of deception and its impact on our lives" />
+    <meta property="twitter:description" content="Explore the complex world of deception and its impact on our lives" />
     <meta property="twitter:image" content="https://youfooled.me/image.jpg" />
 
     <script
-      defer
-      src="https://umami.pcbowers.com/script.js"
-      data-website-id="556cb742-19e7-4800-b8b7-c94372a42a80"
-      data-domains="youfooled.me"></script>
+      async
+      onload="umamiLoaded()"
+      src="https://analytics.eu.umami.is/script.js"
+      data-website-id="cc7a9596-61d3-45a2-b751-ae5b6e7569f8"
+      data-domains="youfooled.me"
+    ></script>
 
-    <script defer src="/attemptRickroll.js"></script>
-    <script defer src="/logAvoidance.js"></script>
+    <script>
+      function umamiLoaded() {
+        rickroll();
+        avoidRickroll();
+      }
+
+      function rickroll() {
+        setTimeout(() => {
+          window.umami.track('rickroll-succeeded', { type: 'rickroll' });
+          window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        }, 50);
+      }
+
+      function avoidRickroll() {
+        setTimeout(() => {
+          window.umami.track('rickroll-avoided', { type: 'rickroll' });
+        }, 1000);
+      }
+    </script>
   </head>
 
   <body>
     <main>
       <img
         src="/image.jpg"
-        alt="header image depicting a pillow cross-stiched with the sentence, 'Life is Full of Surprises'" />
+        alt="header image depicting a pillow cross-stiched with the sentence, 'Life is Full of Surprises'"
+      />
       <h1>The Art of Deception</h1>
       <p>
         <i>By <a href="https://github.com/pcbowers" target="_blank">Chris Bowers</a></i>
       </p>
 
       <p>
-        Deception is a pervasive aspect of human behavior. From small white lies to elaborate scams,
-        we are all capable of deceiving others. But why do we do it? The answer is complex and
-        varies from person to person. Some people deceive to gain power or control over others,
-        while others deceive to avoid punishment or embarrassment. In some cases, deception may even
-        be used to protect someone from harm.
+        Deception is a pervasive aspect of human behavior. From small white lies to elaborate scams, we are all capable
+        of deceiving others. But why do we do it? The answer is complex and varies from person to person. Some people
+        deceive to gain power or control over others, while others deceive to avoid punishment or embarrassment. In some
+        cases, deception may even be used to protect someone from harm.
       </p>
 
       <p>
-        Regardless of the reason, deception can have serious consequences. It erodes trust and
-        damages relationships, and can lead to legal and financial problems. For this reason, it is
-        important to understand the art of deception and how it works.
+        Regardless of the reason, deception can have serious consequences. It erodes trust and damages relationships,
+        and can lead to legal and financial problems. For this reason, it is important to understand the art of
+        deception and how it works.
       </p>
 
       <p>
-        Deception can take many forms, including verbal, nonverbal, and behavioral. Verbal deception
-        involves lying or misleading others through the use of language. Nonverbal deception
-        involves using body language, facial expressions, and other nonverbal cues to convey a
-        message that is different from the truth. Behavioral deception involves manipulating
-        situations to create a false impression or to hide something from others.
+        Deception can take many forms, including verbal, nonverbal, and behavioral. Verbal deception involves lying or
+        misleading others through the use of language. Nonverbal deception involves using body language, facial
+        expressions, and other nonverbal cues to convey a message that is different from the truth. Behavioral deception
+        involves manipulating situations to create a false impression or to hide something from others.
       </p>
 
       <p>
-        To protect yourself from deception, it is important to be aware of these different forms and
-        to look for warning signs. These may include inconsistencies in someone's story, avoidance
-        of certain topics, or changes in behavior.
+        To protect yourself from deception, it is important to be aware of these different forms and to look for warning
+        signs. These may include inconsistencies in someone's story, avoidance of certain topics, or changes in
+        behavior.
       </p>
 
       <p>
-        In conclusion, deception is a complex and pervasive aspect of human behavior that can have
-        serious consequences. By understanding the art of deception and its various forms, we can
-        better protect ourselves and build stronger relationships based on trust and honesty. If you
-        made it this far, well done! You avoided being rickrolled!
+        In conclusion, deception is a complex and pervasive aspect of human behavior that can have serious consequences.
+        If you made it this far, well done! You avoided being rickrolled! By understanding the art of deception and its
+        various forms, we can better protect ourselves and build stronger relationships based on trust and honesty.
       </p>
     </main>
   </body>
